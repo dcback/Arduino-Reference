@@ -3,6 +3,8 @@
     (const __FlashStringHelper *) : Read F_memory str
     pgm_read_word_near : Read F_memory Int
 ******************************************************/
+// https://www.arduino.cc/reference/ko/language/variables/utilities/progmem/
+
 const PROGMEM char NAME[] = {"I am DCBACK! "};
 const PROGMEM uint16_t INTS[] = { 123, 456, 789, 876, 543 };
 
