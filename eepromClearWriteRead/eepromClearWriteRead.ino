@@ -48,9 +48,6 @@ void loop() {
         Serial.print(" : ");
         Serial.print(rdVal, DEC);
         Serial.println();
-
-        if ( addr >= EEPROM.length() )
-            addr = 0;
     }
     digitalWrite(13, LOW);
 }
