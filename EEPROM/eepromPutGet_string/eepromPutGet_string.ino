@@ -7,13 +7,12 @@
 ****************************************************/
 #include <EEPROM.h>
 
-char fileName[30] = "[BME280_4JIG]";  // string
-
+char fileName[30] = "[BME280_4JIG : 20190310]";  // string
 byte eeAddress = 0;
 
 void setup() {
     Serial.begin(9600);
-    
+
     EEPROM.put(eeAddress, fileName);   // Write data
     EEPROM.get(eeAddress, fileName);   // Read data
 
