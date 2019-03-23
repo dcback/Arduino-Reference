@@ -5,20 +5,22 @@
     micros(unsigned long) : us dealy
 *****************************************************************/
 void setup() {
+
+    unsigned int us = micros();
+    unsigned int ms = millis();
+
     Serial.begin(9600);
 
+    delay(1);                 // 1ms
+    delayMicroseconds(1000);  // 1ms(1000us) -> effective value : 3 ~ 16383
+
+    Serial.print(us); Serial.print("us");
+    Serial.print("\t");
+    Serial.print(ms); Serial.println("ms");
+
     Serial.print(micros()); Serial.print("us");
-    Serial.print("\t\t");
+    Serial.print("\t");
     Serial.print(millis()); Serial.println("ms");
-
-    for ( int i = 0; i < 10; i++ ) {
-        delay(500);                 // 500ms
-        delayMicroseconds(500000);  // effective value : 3 ~ 16383
-
-        Serial.print(micros()); Serial.print("us");
-        Serial.print("\t");
-        Serial.print(millis()); Serial.println("ms");
-    }
 }
 
 void loop() {
