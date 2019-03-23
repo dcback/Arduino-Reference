@@ -13,7 +13,6 @@ unsigned long preMicros = 0;
 unsigned long preMillis = 0;
 
 void setup() {
-    Serial.begin(9600);
     pinMode(ledPin, OUTPUT);
 }
 
