@@ -6,8 +6,8 @@
 *****************************************************************/
 void setup() {
 
-    unsigned int us = micros();
-    unsigned int ms = millis();
+    unsigned long us = micros();
+    unsigned long ms = millis();
 
     Serial.begin(9600);
 
