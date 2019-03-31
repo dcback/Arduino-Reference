@@ -26,7 +26,7 @@ void loop() {
     printf("sum3 = %d\n", sum3() + 2);
     printf("sum4 = %d\n", sum4(a, b) + 3);
 
-    Serial.end();     // serial ending & can use TX, RX pin
+    Serial.end();     // serial ending & can use TX, RX pin, STM32 Error
 }
 
 void sum1() {
