@@ -20,7 +20,6 @@ void setup() {
 }
 
 void loop() {
-
     sum1();
     sum2(a, b);
     printf("sum3 = %d\n", sum3() + 2);
