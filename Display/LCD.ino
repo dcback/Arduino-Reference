@@ -1,7 +1,7 @@
 /***************************************
         Arduino ESP8266  STM32F103
-    SDA    4       4        PB7
-    SCL    5       5        PB6
+    SDA    4    2(GPIO4)    PB7
+    SCL    5    1(GPIO5)    PB6
 ****************************************/
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
