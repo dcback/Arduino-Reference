@@ -2,6 +2,7 @@
     I2C    Arduino   ESP8266    STM32F103
     SDA       4      D2(GPIO4)     PB7
     SCL       5      D1(GPIO5)     PB6
+    // No define -> Auto Set(Define)
 *******************************************/
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
