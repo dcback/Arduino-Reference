@@ -32,7 +32,7 @@ void loop() {
         Serial.println(buf[2]);
         Serial.println(buf[3]);
         Serial.println(buf[4]);
-        Serial.println(buf[5]); // '\n\
+        Serial.println(buf[5]); // '\n'
         delay(1000);
     }
 }
