@@ -4,7 +4,7 @@ typedef struct {
     word sensor3;
     word sensor4;
     word sensor5;
-} SensorInfo;
+} sensorInfo;
 
 char msg[100];
 
@@ -14,7 +14,7 @@ void setup() {
 
 void loop() {
 
-    SensorInfo sInfo;
+    sensorInfo sInfo;
     sInfo.sensor1 = 9999; sInfo.sensor2 = 20; sInfo.sensor3 = 30; sInfo.sensor4 = 40; sInfo.sensor5 = 9999;
 
     sprintf(msg, ">>>[SENSOR] %d , %d , %d , %d , %d", sInfo.sensor1, sInfo.sensor2, sInfo.sensor3, sInfo.sensor4, sInfo.sensor5);
